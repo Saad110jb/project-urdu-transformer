@@ -1,35 +1,30 @@
 # Core
-pip install --upgrade pip
-streamlit==1.24.1        # Updated to latest stable Streamlit 1.x for compatibility
-torch==2.9.1             # Minor update for stability
-numpy==1.26.4            # Latest 1.x stable version
-pandas==2.3.4            # Minor patch update
+pip>=24.0
+streamlit==1.24.1
+torch==2.1.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==1.26.4
+pandas==2.3.4
 
 # Tokenizer & text processing
-sentencepiece==0.1.99    # Keep as-is
+sentencepiece==0.1.99
 
-# Optional dependencies for model utilities
-protobuf==6.0.3          # Slightly downgraded to avoid compatibility issues with Torch/Streamlit
-typing-extensions==4.8.0 # Updated for Python 3.11+ compatibility
+# Model utilities
+protobuf==4.25.3
+typing-extensions==4.8.0
 
-# Optional packages for plotting / charts in Streamlit
-altair==5.0.1            # Compatible with Streamlit 1.x
-pydeck==0.10.1           # Stable version for Streamlit
-pillow==11.4.0           # Minor update
+# Streamlit visualization
+altair==5.0.1
+pydeck==0.10.1
+pillow==11.4.0
 
-# Git / LFS (already used)
+# Git / LFS utilities
 gitpython==3.1.31
 smmap==5.0.2
 gitdb==4.0.12
 
-# Other utility packages
-requests==2.32.5
+# Other utilities
+requests==2.32.3
 jsonschema==4.25.1
 tzdata==2025.2
 click==8.3.0
-
-# Additional recommended packages
-rich==14.2.0             # Streamlit dependency
-markdown-it-py==4.0.0    # Streamlit dependency
-pygments==2.19.2
-mdurl==0.1.2
