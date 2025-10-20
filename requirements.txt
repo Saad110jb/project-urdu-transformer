@@ -1,32 +1,13 @@
-# Core
-pip>=24.0
-streamlit==1.24.1
-torch==2.7.0+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
-
---extra-index-url https://download.pytorch.org/whl/cpu
-numpy==1.26.4
-pandas==2.3.4
-
-# Tokenizer & text processing
-sentencepiece==0.1.99
-
-# Model utilities
-protobuf==4.25.3
-typing-extensions==4.8.0
-
-# Streamlit visualization
-altair==5.0.1
-pydeck==0.10.1
-pillow==11.4.0
-
-# Git / LFS utilities
-gitpython==3.1.31
-smmap==5.0.2
-gitdb==4.0.12
-
-# Other utilities
-requests==2.32.3
-jsonschema==4.25.1
-tzdata==2025.2
-click==8.3.0
+# Updated for Python 3.13 compatibility
+pip>=25.0
+streamlit==1.39.0
+torch==2.7.1+cpu
+torchvision==0.22.1+cpu
+torchaudio==2.7.1+cpu
+typing-extensions>=4.11.0
+numpy==2.1.1
+pandas==2.2.3
+scikit-learn==1.6.0
+tqdm==4.66.5
+sentencepiece==0.2.0
+transformers==4.45.2
