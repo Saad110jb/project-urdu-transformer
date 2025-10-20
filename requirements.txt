@@ -1,4 +1,5 @@
 # Core
+pip install --upgrade pip
 streamlit==1.24.1        # Updated to latest stable Streamlit 1.x for compatibility
 torch==2.9.1             # Minor update for stability
 numpy==1.26.4            # Latest 1.x stable version
